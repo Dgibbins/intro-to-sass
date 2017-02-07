@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Oswald', $font-stack;
+  // font-weight: 700
+  line-height: 1.1;
+}
+
+html {
+  box-sizing: inherit;
+  font-family: 'Source Sans Pro',$font-stack;
+  font-size: 20px;
+  line-height: 1.35;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+article {
+  width: 75%;
+  margin: 1rem auto 3rem;
+}
+
+  header {
+    @include clearfix;
+  }
